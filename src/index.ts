@@ -14,6 +14,9 @@ let db = {
     ],
 }
 
+app.get('/', (req, res) => {
+    res.send('My first project')
+})
 app.get('/courses', (req, res) => {
     res.send(db.courses);
 })
